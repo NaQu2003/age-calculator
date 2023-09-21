@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+   <form class="form form-js">
+     <div class="day-box">
+        <label class="label"for="day-input">Day</label>
+        <input type="text" name="date" class="day-input"    id="days-input" placeholder="DD">
+        <label for="day-input" class="error error-day">
+          Must be valid day
+        </label>
+     </div>
+     <div class="month-box">
+        <label class="label" for="month-input">Month</label>
+      <input type="text-i" name="date" class="month-input" id="month-input" placeholder="MM">
+      <label for="month-input" class="error  error-month">
+          Must be valid month
+        </label>
+
+      </div>
+      <div class="year-box">
+          <label class="label" for="year-input">Year</label>
+      <input type="text" name="date" class="year-input"id="year-input" placeholder="YYYY">
+      <label for="year-input" class="error error-year">
+          Must be valid year
+        </label>
+        
+        </div>
+        <button class="arrow arrow-js">
+            <img src="assets/images/icon-arrow.svg" alt="arrow.svg">
+        </button>
+       
+  </form>
+ 
+ 
+    <div class="year-calculation">
+      <p class="years"><span class="years-number-js">--</span> years</p>
+      <p class="months"><span class="months-number-js">--</span> months</p>
+      <p class="days"><span class="days-number-js">--</span> days</p>
+    </div>
+  </main>
+<script src="main.js"></script>
+</body>
+</html>

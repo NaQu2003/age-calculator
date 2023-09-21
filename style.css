@@ -1,0 +1,155 @@
+@font-face{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: Italic;
+    src: url('assets/fonts/Poppins-BoldItalic.ttf');
+}
+@font-face{
+    font-family: "Poppins";
+    font-weight: 700;
+    src: url('assets/fonts/Poppins-Bold.ttf');
+}
+@font-face{
+    font-family: "Poppins";
+    font-weight: 800;
+    src: url('assets/fonts/Poppins-ExtraBold.ttf');
+}
+@font-face{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: Italic;
+    src: url('assets/fonts/Poppins-Italic.ttf');
+}
+@font-face{
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url('assets/fonts/Poppins-Regular.ttf');
+}
+body{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:hsl(0, 0%, 86%);
+    padding-top:20px;
+    padding-bottom:20px;
+   
+    flex-wrap: wrap;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color:white;
+    padding:50px;
+    border-bottom-right-radius: 30%;
+}
+.day-box,.month-box,.year-box{
+    display:flex;
+    flex-direction: column;
+}
+.year-box{
+    margin-right:240px;
+}
+.form{
+    display:flex;
+    padding-bottom:50px;
+}
+.day-input,.month-input,.year-input{
+    height:70px;
+    width:160px;
+    padding-left:25px;
+    padding-right:10px;
+    font-size: 2rem;
+    margin-right:30px;
+    font-weight: 700;
+}
+
+.form{
+    width:100%;
+    border-bottom:1px solid hsl(0, 1%, 44%);
+    position: relative;
+    margin-bottom: 80px;
+}
+.label{
+    font-family: "Poppins";
+    font-weight: 700;
+    margin-bottom:10px;
+    color:hsl(0, 1%, 44%);
+}
+.day-input::placeholder{
+    font-size: 2rem;  
+}
+.arrow{
+    position: absolute;
+    right:0;
+    bottom:-35px;
+    border-radius:50%;
+    padding:10px;
+    background-color:hsl(259, 100%, 65%);
+    cursor:pointer;
+    border:none;
+    transition: background-color 0.15s;
+}
+.arrow:hover{
+    background-color:black;
+}
+.years,.months,.days{
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 5rem;
+    font-family: "Poppins";
+    font-style: italic;
+    margin:0px;
+}
+.years span,.months span,.days span{
+    color:hsl(259, 100%, 65%);
+}
+.error{
+    color:hsl(0, 100%, 67%);
+    font-family: 1.2.rem;
+    margin-top:10px;
+    font-family: "Poppins";
+    font-style: italic;
+    max-width:200px;
+    
+    
+}
+.error-day,.error-month,.error-year{
+    display:none;
+}
+.error-day-empty,.error-month-empty,.error-year-empty{
+    display:none;
+}
+
+
+@media (max-width:945px){
+    .year-box{
+        margin:0px;
+    }
+    .day-input,.month-input,.year-input{
+        width:80px;
+       font-size: 1.5rem;
+       padding-left:5px;
+       padding-right:5px;
+       
+    }
+    .year-input{
+        margin-right: 0px;
+    }
+    .years,.months,.days{
+        font-size: 2.5rem;
+    }
+    .arrow{
+        right:40%;
+    }
+    .container{
+        padding:20px;
+        margin:20px;
+    }
+    .error{
+        max-width:100px;
+    }
+}
